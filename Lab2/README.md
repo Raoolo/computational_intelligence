@@ -1,5 +1,3 @@
-### Collaborated with Donato Lanzilloti on the solution
-
 
 ### Overview
 
@@ -27,3 +25,8 @@ Key Components
 - The ES loop generates offspring solutions and selects the best ones based on the game outcomes.
 - The process iteratively adjusts strategy probabilities and the standard deviation (σ) of the offspring generation process.
 - The final output is the best strategy probability distribution found.
+
+
+### Collaborated with Donato Lanzilloti on the solution
+
+The README was updated after reading the issues.
