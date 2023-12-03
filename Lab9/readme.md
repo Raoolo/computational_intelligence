@@ -18,3 +18,7 @@ The function, with a certain probability, switches some of the bits of a genome 
 ### Running the code
 There are two ways of running the code, the first one is based on a fixed number of generations after which the program will stop and return the best found genomes and fitness.
 The second version is based on a dynamic termination condition, and it check that the fitness is actually improving through the generations and is not stuck. Once the improvement is neglible the program stops and returns the results.
+
+## To improve
+
+As we can see the results are not great and this is because the program for each run creates a totally new population and starts the crossover and mutations on that new population, forgetting all the previous improvement. This needs to be fixed to improve the results.
