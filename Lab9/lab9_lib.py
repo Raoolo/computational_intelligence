@@ -23,8 +23,9 @@ class AbstractProblem:
         return sum(bool(g) for g in genome)
 
     def __call__(self, genome): # genome is a list btw
-        '''updates num of calls, calculates fitness of a genome'''
+        '''Updates num of calls, calculates fitness of a genome'''
         self._calls += 1    
+        # create slices of the array then do some shenanigans on it to compute the fitness
         fitnesses = sorted((AbstractProblem.onemax(genome[s :: self.x]) for s in range(self.x)), reverse=True)
         val = sum(f for f in fitnesses if f == fitnesses[0]) - sum(
             f * (0.1 ** (k + 1)) for k, f in enumerate(f for f in fitnesses if f < fitnesses[0])
