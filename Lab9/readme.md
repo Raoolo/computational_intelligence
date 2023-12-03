@@ -16,9 +16,11 @@ The previously found genomes are passed to a function that crosses the genomes a
 The function, with a certain probability, switches some of the bits of a genome to introduce variability. This is done with NumPy to speed up the operation.
 
 ### Running the code
-There are two ways of running the code, the first one is based on a fixed number of generations after which the program will stop and return the best found genomes and fitness.
+The code is run thanks to a function that creates the instance of the problem, creates a first population and then iterates until the stopping condition is met. In the loop, the first method called is elitism, followed by tournament selection and the output of the latter is then passed to the crossover and finally to the mutation function. The population is then updated to keep track of the offsprings generated.
+There are two ways of stopping the code, the first one is based on a fixed number of generations after which the program will stop and return the best found genomes and fitness.
 The second version is based on a dynamic termination condition, and it check that the fitness is actually improving through the generations and is not stuck. Once the improvement is neglible the program stops and returns the results.
 
-## To improve
+--- 
 
-As we can see the results are not great and this is because the program for each run creates a totally new population and starts the crossover and mutations on that new population, forgetting all the previous improvement. This needs to be fixed to improve the results.
+## To improve
+The results currently seem not great. The reason is still being investigated, and might be due to poor hyperparameter setting. 
