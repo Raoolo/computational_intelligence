@@ -1,5 +1,5 @@
-## Reinforcement learning for Tic-Tac-Toe game
----
+# Reinforcement learning for Tic-Tac-Toe game
+
 ### Objective
 We want to create an agent that can learn the optimal strategy to beat the adversary through iterations of the game.
 
