@@ -15,7 +15,7 @@ The agent explores the possible actions in two ways:
 
 
 ### Training and testing
-The agent will play a number of games (in the example, 10000) to learn the best approach to play the game against a random agent. Then, it is tested 1000 times and we can see that it never loses and at most draws against them a handful of times. Each game, the starting player is chosen randomly to avoid overfitting of certain strategies.
+The agent will play a number of games (in the example, 10000) to learn the best approach to play the game against a random agent. Then, it is tested 1000 times and we can see that it never loses and at most draws against them very few times. Each game, the starting player is chosen randomly to avoid overfitting of certain strategies.
 There is also the `print_board` method that is used to actually see the board and how the players are playing, but in this case it is commented to avoid the output in the terminal.
 
 ### Improvements
