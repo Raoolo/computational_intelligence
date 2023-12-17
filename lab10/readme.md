@@ -13,10 +13,10 @@ The agent explores the possible actions in two ways:
 - one is the random approach based on the epsilon-greedy strategy, meaning based on the decaying value of epsilon it will explore random solutions
 - the other is the exploitation, meaning that it will choose the best-known actions for the possible move
 
+
 ### Training and testing
-The agent will play a number of games (in the example, 10000) to learn the best approach to play the game against a random agent. Then, it is tested 1000 times and we can see that it never loses and at most draws against them a handful of times.
+The agent will play a number of games (in the example, 10000) to learn the best approach to play the game against a random agent. Then, it is tested 1000 times and we can see that it never loses and at most draws against them a handful of times. Each game, the starting player is chosen randomly to avoid overfitting of certain strategies.
 There is also the `print_board` method that is used to actually see the board and how the players are playing, but in this case it is commented to avoid the output in the terminal.
 
 ### Improvements
 The agents could learn to play against a better player (not a random one).
-Another thing is that the program always starts with our agent, while an improvemnt could be to introduce randomnmess in the starting player.
