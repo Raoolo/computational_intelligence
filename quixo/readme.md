@@ -14,4 +14,4 @@ To train the Q-table, the board has been modified in different ways to increase 
 The rewards are based on the feedback of the action, giving more importance to actions that lead to the win of the game.
 
 ### Role of MinMax
-For game states where the best action is not obvious (i.e. winning moves), MinMax provides a way to evaluate the possible moves by considering potential future states, simulating moves for both the agent and the opponent for a fixed number of future steps. This allows the Q-learning agent to consider also the paths that lead to the win, even when the win is not immediate.
+For game states where the best action is not obvious (i.e. winning moves), MinMax provides a way to evaluate the possible moves by considering a fixed number of potential future states, simulating moves for both the agent and the opponent, and trying to maximize the player's advantage. This allows the Q-learning agent to consider also the paths that lead to the win, even when the win is not immediate.
